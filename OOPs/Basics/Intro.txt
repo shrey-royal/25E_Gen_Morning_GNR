@@ -1,0 +1,13 @@
+Class: Factory that designs product
+
+class Bakery: (what ingredients i will need to make the product, how will i make it)
+
+attributes  - ingredients
+method      - process of making the product
+
+Object: Product of that factory
+
+Access Modifiers/Specifier: it restricts the data from the outside world.
+    - private   (default - within the class)
+    - protected (within the class and their child/sub-classes)
+    - public    (everyone)
