@@ -43,6 +43,21 @@ public:
             cout << endl;
         }
     }
+
+    Matrix addition(const Matrix& m) {
+        if (rows != m.rows || cols != m.cols) {
+            cerr << "Dimensions are not matching!" << endl;
+            return Matrix(0, 0);
+        }
+
+        Matrix r(rows, cols);
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                r.data[i][j] = data[i][j] + m.data[i][j];
+            }
+        }
+        return r;
+    }
     
     Matrix multiply(int scalar) {
         Matrix result(rows, cols);
@@ -74,11 +89,16 @@ int main() {
     m2.setElement(1, 0, 7);
     m2.setElement(1, 1, 8);
 
-    Matrix r1 = m1.multiply(2);
-    Matrix r2 = m2.multiply(0.5f);
+    // Matrix r1 = m1.multiply(2);
+    // Matrix r2 = m2.multiply(0.5f);
 
-    r1.print();
-    r2.print();
+    // r1.print();
+    // r2.print();
+
+    // m1.multiply(2).print();
+
+    m1.addition(m2).print();
+    // add.print();
 
     return 0;
 }
