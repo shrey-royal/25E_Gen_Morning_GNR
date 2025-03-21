@@ -1,0 +1,10 @@
+Abstraction:
+
+- It is a process of simplifying complex systems by hiding the unnecessary details and exposing only the essential features to the user.
+
+- In simple terms, abstraction allows you to focus on high-level operations while hiding the low-level implementation details.
+
+- In order to make a class virtual, we have to atleast declare 1 pure virtual function
+
+- Pure Virtual Function Syntax:
+    virtual returntype functionname(arguments) = 0;
