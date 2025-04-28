@@ -15,5 +15,7 @@ public class Array1d {
             System.out.print(arr[i] + ", ");
         }
         System.out.println("\b\b }");
+        
+        sc.close();
     }
 }
